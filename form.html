@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="form.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <main>
+        <div class="container ">
+            <header class="header">
+                <h1 id="title">
+                    Domino's Pizza Survey
+                </h1>
+                <p id="description">
+                    Please let us know about your experience with our food and services
+                </p>
+            </header>
+            <form id="survey-form">
+
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label for="Age">Age</label>
+                    <input type="number" name="Age" id="Age" class="formControl" placeholder="Enter your Age" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Contact No:">Contact Number</label>
+                    <input type="tel" name="Contact No:" id="Contact No:" class="formControl" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Email">Email ID</label>
+                    <input type="text" placeholder="Enter your email" id="email" class="formControl" required>
+                </div>
+
+
+
+                <div class="form-group">
+                    <p id="quest">Gender</p>
+                    <select name="role" required id="dropdown" class="formControl">
+                        <option value disabled selected>Select your Gender</option>
+                        <option value="student">Male</option>
+                        <option value="teacher">Female</option>
+                        <option value="teacher">Prefer not to say</option>
+                    </select>
+                </div>
+
+
+
+                <div class="form-group">
+                    <p id="quest">Do You Like Our Domino's Pizza ?</p>
+                    <label for="">
+                        <input type="radio" name="source" value="Yes" class="inputRadio"> Yes
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source" value="No" class="inputRadio">No
+                    </label>
+                </div>
+
+
+                <div class="form-group">
+                    <p id="quest">How Frequently do you Visit ?</p>
+                    <label for="">
+                        <input type="radio" name="source2" value="Weekly" class="inputRadio"> Weekly
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source2" value="Monthly" class="inputRadio">Monthly
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source2" value="Occasionally" class="inputRadio"> Occasionally
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p id="quest">Which Pizza do you usually purchase ? </p>
+                    <label for="">
+                        <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev"> Margherita
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev"> Paneer
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="prefer" class="checkbox" value="app-dev"> Pepperoni
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="prefer" class="checkbox" value="soft-engineering"> Mushrooms
+                    </label>
+                    <label for="">
+                        <input type="checkbox" name="prefer" class="checkbox" value="other"> Chilli Pepper
+                    </label>
+                </div>
+
+
+
+                <div class="form-group">
+                    <p id="quest"> How Would you describe your eating experience at Domino's ?</p>
+                    <label for="">
+                        <input type="radio" name="source3" value="Yes" class="inputRadio"> Excellent
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source3" value="Yes" class="inputRadio"> Very Good
+                    </label>
+                    <label for="">
+                        <input type="radio" name="source3" value="Yes" class="inputRadio"> Average
+                    </label>
+
+
+                </div>
+
+
+
+
+                <div class="form-group">
+                    <p id="quest">Give us your feedback</p>
+                    <textarea name="feedback" cols="30" rows="5" id="feedback" class="textarea"
+                        placeholder="Enter your feedback here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="button" class="btn" onclick="validate()" value="Submit">
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
